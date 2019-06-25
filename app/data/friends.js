@@ -1,20 +1,84 @@
-var friends = [
+var friendsArray = [
     {
-        "name":"Ahmed",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name":"Jacob",
+        "photo":"https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+        "scores":[
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ]
+    },
+    {
+        "name":"Jeremiah",
+        "photo":"https://avatars1.githubusercontent.com/u/5382443?s=400&v=4",
         "scores":[
             5,
             1,
             4,
+            5,
+            1,
             4,
             5,
             1,
-            2,
+            4,
+            5
+        ]
+    },
+    {
+        "name":"Angel",
+        "photo":"https://avatars2.githubusercontent.com/u/673011?s=400&v=4",
+        "scores":[
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+        ]
+    },
+    {
+        "name":"Edward",
+        "photo":"https://avatars0.githubusercontent.com/u/444720?s=400&v=4",
+        "scores":[
             5,
             4,
+            3,
+            2,
+            1,
+            5,
+            4,
+            3,
+            2,
             1
         ]
-    }
+    },
+    {
+        "name":"Fran",
+        "photo":"https://avatars0.githubusercontent.com/u/2316837?s=400&v=4",
+        "scores":[
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ]
+    },
 ];
-module.exports = friends;
+module.exports = friendsArray;
   

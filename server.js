@@ -11,20 +11,17 @@ var PORT = process.env.PORT || 3000;
 // =============================================================
 var app = express();
 
-
-// set up our routes
-require('./app/routing/htmlRoutes')(app);
-require('./app/routing/apiRoutes')(app);
-
-// alternatively I could have done this:
-// Add api routes
-// const apiRoutes = require('./app/routing/apiRoutes');
-// app.use(apiRoutes);  
-
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// set up our routes
+require('./app/routing/htmlRoutes')(app);
+require('./app/routing/apiRoutes')(app);
+// alternatively I could have done this:
+// Add api routes
+// const apiRoutes = require('./app/routing/apiRoutes');
+// app.use(apiRoutes);  
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
